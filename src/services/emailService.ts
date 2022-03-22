@@ -10,7 +10,7 @@ interface IMailMessage {
 }
 
 interface MessageDTO {
-  to: IMailTo,
+  to: IMailTo;
   message: IMailMessage
 }
 

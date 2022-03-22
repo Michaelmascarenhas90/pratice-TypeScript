@@ -18,7 +18,10 @@ export default {
   async create( req: Request, res: Response) {
     const emailService = new EmailService();
     
-    emailService.sendMail({ to: users[0], message: message });
+    emailService.sendMail({ 
+      to: users[0], 
+      message: message 
+    });
     
     return res.send()
   }
